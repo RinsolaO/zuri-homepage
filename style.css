@@ -82,7 +82,7 @@ width:fit-content;
 padding:0;
 background:none;
 color:#333333;
-margin-bottom:15px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -90,6 +90,7 @@ margin-bottom:15px;
         display: flex;
         flex-flow: nowrap row;
         justify-content: flex-end;
+        align-items: center;
     }
 
     .menu-bar-link {
@@ -103,6 +104,8 @@ margin-bottom:15px;
     span.span-link {
 display:flex;
 flex-direction: row;
+justify-content: center;
+align-items: center;
     }
 
     span.span-link .link-button{
@@ -113,8 +116,15 @@ flex-direction: row;
         color:#fff;
         font-size:0.8rem;
         font-weight:900;
-        margin-right:auto;
+        margin-left:20px;
         border-radius:5px;
+        margin-bottom:none;
+    }
+
+    span.span-link .link-button:nth-child(2){
+        background:transparent;
+        color:#121212;
+        border:1px solid #058BFF;
     }
     .menu-group {
         width: 100%;
@@ -130,7 +140,7 @@ flex-direction: row;
         opacity: 1;
         height: fit-content;
         padding: 0 20px;
-        align-content: center;
+        align-items: center;
     }
 
     .menu-group .main-menu li {

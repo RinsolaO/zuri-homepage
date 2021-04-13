@@ -1,3 +1,4 @@
+
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
     * {
@@ -142,6 +143,101 @@
 
     #read-more{
         color:#999;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header styling */
+
+/* -----   NAVIGATION ------ */
+.navbar {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 1rem 1.4rem;
+}
+
+span.menu {
+    display: block;
+    width: 100%;
+    position: relative;
+    line-height: 50px;
+}
+
+.logo-link,
+.menu-bar-link {
+    display: inline-block;
+
+    font-weight: 600;
+    font-size: 24px;
+}
+
+a.logo-link,
+a.menu-bar-link {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-link:hover,
+.menu-group ul li a:hover {
+    color: rgb(81, 90, 216);
+}
+
+.menu-bar-link {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.navbar.open .menu-group .main-menu {
+    opacity: 1;
+    height: fit-content;
+}
+
+.menu-group .main-menu {
+    opacity: 0;
+    height: 0;
+}
+
+.menu-group .main-menu li {
+    opacity: 1;
+    list-style: none;
+    padding-bottom: 5px;
+    margin: 0 0 10px 0;
+}
+
+.menu-group ul li a {
+    text-decoration: none;
+}
+
+span.span-link .link-button{
+width:fit-content;
+padding:0;
+background:none;
+color:#333333;
+
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: flex-end;
+        align-items: center;
+
     }
 
     .hero-right span{
@@ -156,6 +252,13 @@
         display:block;
         height:80px;
         width:150px;
+
+    span.span-link {
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
     }
 
     .link-button{
@@ -166,8 +269,15 @@
         color:#fff;
         font-size:0.8rem;
         font-weight:900;
-        margin-right:auto;
+        margin-left:20px;
         border-radius:5px;
+        margin-bottom:none;
+    }
+
+    span.span-link .link-button:nth-child(2){
+        background:transparent;
+        color:#121212;
+        border:1px solid #058BFF;
     }
 
     @media  (max-width:768px) {
@@ -333,6 +443,11 @@
         list-style-type: none;
     font:0.9rem;
         color:#666;
+        margin: 0;
+        opacity: 1;
+        height: fit-content;
+        padding: 0 20px;
+        align-items: center;
     }
     div.sop:nth-child(2), div.sop:nth-child(5){
         background:#045293;
